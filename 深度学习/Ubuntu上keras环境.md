@@ -36,7 +36,7 @@ sudo pip install pydot-ng
 
 安装某些代码示例中用到的其他包。
 ```
-sudo apt-get install python3-opencv
+sudo apt-get install python-opencv
 ```
 
 ### 安装 TensorFlow
