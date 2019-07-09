@@ -1,3 +1,5 @@
+## k-邻近算法
+
 对未知类别属性的数据集中的每个点依次执行以下操作：
 - 计算已知类别数据集中的所有点与当前点之间的距离；
 - 按照距离递增次序排序；
@@ -6,6 +8,16 @@
 - 返回前k个点出现频率最高的类别作为当前点的预测分类。
 
 ```
+from numpy import * #科学计算包
+import operator #运算符模块
+
+def createDataSet():
+    group = array([[1.0,1.1],[1.0,1.0],[0,0],[0,0.1]])
+    labels=['A','A','B','B']
+    return group,labels
+
+group ,labels=createDataSet()
+
 # inX  当前点
 # dataSet 已知类别的数据集
 # lebels 已知类别的数据集的类别
@@ -28,4 +40,6 @@ def classify0(inX,dataSet,labels,k):
     #返回前k个点出现频率最高的类别作为当前点的预测分类
     sortedClassCount=sorted(classCount.items(),key=operator.itemgetter(1),reverse=True)
     return sortedClassCount[0][0]
+
+# print (classify0([0,0],group,labels,3))
 ```
