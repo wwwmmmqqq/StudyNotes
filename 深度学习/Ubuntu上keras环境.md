@@ -10,11 +10,16 @@ sudo apt-get install python3-pip python3-dev
 
 ### 安装 Python 科学套件
 安装 BLAS 库（这里安装的是 OpenBLAS），确保你可以在 CPU 上运行快速的张量运算。
+
+linux:
 ```
 sudo apt-get install build-essential cmake git unzip \
  pkg-config libopenblas-dev liblapack-dev
 ```
-
+windows:
+```
+pip3 install build-essential cmake git unzip pkg-config libopenblas-dev liblapack-dev
+```
 安装 Python 科学套件：Numpy、SciPy 和 Matplotlib。无论是否做深度学习，如果想要
 使用 Python 进行任意类型的机器学习或科学计算，这一步都是必需的。
 ```
