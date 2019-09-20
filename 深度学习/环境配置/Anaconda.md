@@ -1,6 +1,10 @@
 ## 安装Anaconda
+第一步：首先安装anaconda3-5.1版本（内置pyhton3.6）
+下载地址：https://repo.continuum.io/archive/
 
-
+安装过程中注意两点：
+- 勾选所有用户
+- 勾选配置环境变量
 
 ---
 ## Anaconda虚拟环境
