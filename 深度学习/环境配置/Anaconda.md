@@ -71,7 +71,7 @@ jupyter notebook
 
 ---
 ## 测试环境
-
+在jupyter notebook中导入，并查看版本
 ```
 import tensorflow as tf
 tf.__version__
@@ -82,3 +82,4 @@ import keras
 keras.__version__
 ```
 ![img](../../imgs/9ab8c8a2-db52-11e9-8a34-2a2ae2dbcce4.png)
+环境构建成功！
