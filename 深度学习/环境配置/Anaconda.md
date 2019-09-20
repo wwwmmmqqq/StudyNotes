@@ -1,3 +1,8 @@
+## 安装Anaconda
+
+
+
+---
 ## Anaconda虚拟环境
 进入工作目录
 ```
@@ -30,6 +35,19 @@ activate tensorFlow
 ```
 pip install tensorFlow
 ```
+遇到问题:
+- Cannot uninstall 'wrapt'. It is a distutils installed project and thus we cannot accurately determine which files belong to it which would lead to only a partial uninstall.
+```
+pip install -U --ignore-installed wrapt enum34 simplejson netaddr
+```
+- distributed 1.21.8 requires msgpack, which is not installed.
+```
+pip install msgpack
+```
+```
+pip install msgpack-python
+```
+
 
 安装Keras
 ```
@@ -50,3 +68,17 @@ activate tensorFlow
 ```
 jupyter notebook
 ```
+
+---
+## 测试环境
+
+```
+import tensorflow as tf
+tf.__version__
+```
+
+```
+import keras
+keras.__version__
+```
+![img](../../imgs/9ab8c8a2-db52-11e9-8a34-2a2ae2dbcce4.png)
