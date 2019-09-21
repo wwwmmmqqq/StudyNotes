@@ -52,7 +52,6 @@ pip install msgpack
 pip install msgpack-python
 ```
 
-
 安装Keras
 ```
 pip install keras
@@ -87,3 +86,28 @@ keras.__version__
 ```
 ![img](../../imgs/9ab8c8a2-db52-11e9-8a34-2a2ae2dbcce4.png)
 环境构建成功！
+
+---
+
+## GPU版本
+- 进入工作目录
+
+- 建立GPU版本的TensorFlow Anaconda虚拟环境
+```
+conda create --name tensorFlow-gpu python=3.5 anaconda
+```
+
+- 启动Anaconda虚拟环境
+```
+activate tensorFlow-gpu
+```
+
+- 安装TensorFlow的GPU版本
+```
+pip install tensorFlow-gpu
+```
+
+- 安装Keras
+```
+pip install keras
+```
