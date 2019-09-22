@@ -90,24 +90,38 @@ keras.__version__
 ---
 
 ## GPU版本
-- 进入工作目录
+进入工作目录
 
-- 建立GPU版本的TensorFlow Anaconda虚拟环境
+建立GPU版本的TensorFlow Anaconda虚拟环境
 ```
 conda create --name tensorFlow-gpu python=3.5 anaconda
 ```
 
-- 启动Anaconda虚拟环境
+启动Anaconda虚拟环境
 ```
 activate tensorFlow-gpu
 ```
 
-- 安装TensorFlow的GPU版本
+安装TensorFlow的GPU版本
 ```
-pip install tensorFlow-gpu
+pip install tensorFlow-gpu==1.12
+```
+如果有相应的报错则安装
+```
+pip install --ignore-installed wrapt
+```
+和
+```
+pip install --ignore-installed  setuptools
 ```
 
-- 安装Keras
+
+安装Keras
 ```
-pip install keras
+pip install keras==2.2.4
+```
+---
+卸载
+```
+pip uninstall tensorflow-gpu
 ```
