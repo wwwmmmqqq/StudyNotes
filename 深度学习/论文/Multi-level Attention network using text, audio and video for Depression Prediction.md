@@ -1,6 +1,6 @@
 - Attention（注意力）机制
 
 - 基于多模态输入特征所提出的多层注意力网络的框图
-![img](../imgs/fe993184-e1d0-11e9-81b4-2a2ae2dbcce4.png)
+![img](../../imgs/fe993184-e1d0-11e9-81b4-2a2ae2dbcce4.png)
 
-- s
+- C3D（深度3维卷积神经网络）
