@@ -1,5 +1,9 @@
 ## Multimodal Transformer Networks for End-to-End Video-Grounded Dialogue Systems
 
+https://github.com/henryhungle/MTN
+
+---
+
 MTN——Multimodal Transformer Networks
 
 - Encoder layers encode text sequences and input video into continuous representations. Positional encoding is used to inject the sequential characteristics of input text and video features at token and video-frame level respectively
@@ -8,6 +12,12 @@ MTN——Multimodal Transformer Networks
 
 ![img](../../imgs/a47dfa76-4f37-43b8-826c-bfea9c6d3163.png)
 For simplicity, Feed Forward, Residual Connection and Layer Normalization layers are not presented.
+
+![img](../../imgs/7de032ce-33ef-49aa-bdc8-c9d8d3aa03e1.png)
+ Text-sequence encoders are used on text input, i.e. dialogue history, video caption, query, and output sequence
+
+![img](../../imgs/00ee26a1-6ea7-4da7-81e7-eb422eca643d.png)
+Video encoders are used on visual and audio features of input video.
 
 ---
 
