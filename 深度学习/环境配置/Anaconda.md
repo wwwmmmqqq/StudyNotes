@@ -1,5 +1,5 @@
 ## 安装Anaconda
-第一步：首先安装anaconda3-5.1版本（内置pyhton3.6）
+第一步：首先安装anaconda3-5.1版本
 下载地址：https://repo.continuum.io/archive/
 
 安装过程中注意两点：
@@ -120,6 +120,30 @@ pip install --ignore-installed  setuptools
 ```
 pip install keras==2.2.4
 ```
+
+安装PyTorch
+conda：
+ ```
+conda install pytorch torchvision cudatoolkit=9.0 -c pytorch
+ ```
+或者pip
+```
+pip install https://download.pytorch.org/whl/cu90/torch-1.0.1-cp35-cp35m-win_amd64.whl
+```
+也可将
+https://download.pytorch.org/whl/cu90/torch-1.0.1-cp35-cp35m-win_amd64.whl
+下载到本地
+然后
+```
+pip install 本地路径/torch-1.0.1-cp35-cp35m-win_amd64.whl
+```
+最后
+```
+pip install torchvision
+```
+
+全部对应Python3.5的版本
+
 ---
 卸载
 ```
