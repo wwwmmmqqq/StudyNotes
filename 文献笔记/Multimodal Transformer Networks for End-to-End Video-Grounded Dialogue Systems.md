@@ -10,13 +10,13 @@ MTN——Multimodal Transformer Networks
 - Decoder layers project the target sequences and perform reasoning over multiple encoded features through a multi-head attention mechanism. Attention layers coupled with feed-forward and residual connections process the projected target sequence over N attention steps before passing to a generative component to generate a response
 - Auto-encoder layers enhance video features with a query-aware attentions on the visual and audio aspects of the input video. A network of multi-head attentions layers are employed as a query auto-encoder to learn the attention in an unsupervised manner
 
-![img](../../imgs/a47dfa76-4f37-43b8-826c-bfea9c6d3163.png)
+![img](../imgs/a47dfa76-4f37-43b8-826c-bfea9c6d3163.png)
 For simplicity, Feed Forward, Residual Connection and Layer Normalization layers are not presented.
 
-![img](../../imgs/7de032ce-33ef-49aa-bdc8-c9d8d3aa03e1.png)
+![img](../imgs/7de032ce-33ef-49aa-bdc8-c9d8d3aa03e1.png)
  Text-sequence encoders are used on text input, i.e. dialogue history, video caption, query, and output sequence
 
-![img](../../imgs/00ee26a1-6ea7-4da7-81e7-eb422eca643d.png)
+![img](../imgs/00ee26a1-6ea7-4da7-81e7-eb422eca643d.png)
 Video encoders are used on visual and audio features of input video.
 
 ---
