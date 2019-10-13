@@ -65,7 +65,7 @@ The Extended Distress Analysis Interview Corpus dataset (E-DAIC)——扩展疾�
 
 - 提出多层注意力网络，学习每个特征的重要程度并对其进行加权，从而更好地进行早期融合和预测
 
-- 
+- 这种注意力网络能够发现模态的中哪种特征更具有影响力，以及每种模态对预测的贡献率
 
 
 
