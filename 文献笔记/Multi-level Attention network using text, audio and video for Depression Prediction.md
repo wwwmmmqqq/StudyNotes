@@ -32,19 +32,65 @@ The Extended Distress Analysis Interview Corpus dataset (E-DAIC)——扩展疾�
 
 ## 研究方法
 
-### 1、单一模态分别训练模型
+### 单一模态分别训练模型
 
-- #### 1.1 Text
- - 数据集：[AVEC 2019 Workshop and Challenge: State-of-Mind, Detecting Depression with AI, and Cross-Cultural Affect Recognition](https://arxiv.org/pdf/1907.11510.pdf)
+- #### Text
 
- - 使用[Universal Sentence Encoder(通用句子编码器)](https://arxiv.org/pdf/1803.11175.pdf)获取句子嵌入
+ - 我们使用[AVEC 2019 Workshop and Challenge: State-of-Mind, Detecting Depression with AI, and Cross-Cultural Affect Recognition](https://arxiv.org/pdf/1907.11510.pdf)提供的数据中参与者的语音到文本的输出
 
- - 使用两层堆叠式双向长期短期记忆网络架构，其中句子嵌入作为输入， 身体健康问卷抑郁量表(PHQ)得分作为输出，来训练语音转录的回归模型
+ - 使用[Universal Sentence Encoder(通用句子编码器)](https://arxiv.org/pdf/1803.11175.pdf)获取句子嵌入(sentence embedding)
 
- - 每个BLSTM层都有200个隐藏单元，其中第一BLSTM层的前向隐藏层的每个隐藏单元的输出连接到第二层的前向隐藏单元的输入
+ - 使用两层堆叠式BLSTM（双向长期短期记忆）网络架构，其中句子嵌入作为输入， 身体健康问卷抑郁量表的得分作为输出，来训练语音转录的回归模型
 
-- #### 1.2 Audio
+ - 每个BLSTM层都有200个隐藏单元，其中第一层BLSTM的前向隐藏层的每个隐藏单元的输出连接到第二层的前向隐藏单元的输入
 
-- #### 1.3 Visual
+ - 还为后向层中的每个隐藏单元构建了相同的连接，以创建堆叠
 
-### 2、Fusion
+ - BLSTM的两层在每个timestep都给出（batchsize，400）的输出，并将其发送到前​​馈层作为输入以进行回归
+
+ - 将前馈层中的节点数保持为（500,100,60,1），并使用整流的线性单位作为激活函数
+
+- #### Audio
+
+ - 对于音频模态，使用不同的音频特征（低级特征和功能）创建了模型
+
+ -
+
+
+- #### Visual
+
+### Fusion
+
+- 早期融合在计算上开销太大，而且在神经网络训练时可能导致过拟合，因此后期融合和混合模型变得更加普遍。
+
+- 提出多层注意力网络，学习每个特征的重要程度并对其进行加权，从而更好地进行早期融合和预测
+
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
