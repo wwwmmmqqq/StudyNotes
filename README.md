@@ -4,6 +4,8 @@
 
 - ### 一般记录
 
+- ### [书单](https://github.com/MonsterMoriarty/StudyNotes/blob/master/%E8%AE%B0%E5%BD%95/%E4%B9%A6%E5%8D%95.md)
+
 - ### 机器学习
 
 - ### 深度学习
