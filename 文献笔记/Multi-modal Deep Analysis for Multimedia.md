@@ -1,3 +1,25 @@
+总纲：
+- 数据驱动的多模态相关表示
+ - 多任务学习和多视图学习
+ - 多模态深度表示
+ - 多模态转移学习
+ - 多模态哈希
+- 知识导向的多模态分析
+ - 知识导向的融合方法
+   - 贝叶斯推理
+   - 师生网络
+   - 强化学习
+ - 数据和知识融合的典型应用
+   - 多模态视觉问答
+   - 多模态视频摘要
+   - 多模态视觉模式挖掘
+   - 多模态推荐
+
+
+
+
+---
+
 ## 数据驱动的多模态相关表示
 
 ### A. 多任务学习和多视图学习
@@ -48,23 +70,35 @@
 - 混合模型通过组合判别部分和生成部分来学习条件分布和联合分布[40] – [42]。
 
 [30] J. Ngiam, A. Khosla, M. Kim, J. Nam, H. Lee, and A. Y. Ng, “Multimodal deep learning,” in Proceedings of the 28th international conference on machine learning (ICML-11), 2011, pp. 689–696.
+
 [31] N. Srivastava and R. Salakhutdinov., “Learning representations for multimodal data with deep belief nets,” in International conference on machine learning workshop, vol. 79, 2012.
+
 [32] N. Srivastava and R. R. Salakhutdinov, “Multimodal learning with deep boltzmann machines,” in Advances in neural information processing systems, 2012, pp. 2222–2230.
+
 [33] C. Yu, S. Steffey, J. He, D. Xiao, T. Cui, P. Chen, and H. Mller, “Medical image retrieval: A multimodal approach,” vol. 13, no. Suppl 3, pp. 125–136, 2014.
+
 [34] I. J. Goodfellow, J. Pouget-Abadie, M. Mirza, B. Xu, D. Warde-Farley, S. Ozair, A. Courville, and Y. Bengio, “Generative adversarial nets,” in International Conference on Neural Information Processing Systems, 2014, pp. 2672–2680.
+
 [35] D. P. Kingma and M. Welling, “Auto-encoding variational bayes,” in Conference Proceedings: Papers Accepted To the International Conference on Learning Representations, 2014.
+
 [36] Y. Huang, W. Wang, and L. Wang, “Unconstrained multimodal multilabel learning,” IEEE Transactions on Multimedia, vol. 17, no. 11, pp.
 1923–1935, 2015.
+
 [37] S. Reed, Z. Akata, X. Yan, L. Logeswaran, B. Schiele, and H. Lee, “Generative adversarial text to image synthesis,” pp. 1060–1069, 2016.
+
 [38] M. Suzuki, K. Nakayama, and Y. Matsuo, “Joint multimodal learning with deep generative models,” 2016.
+
 [39] G. Pandey and A. Dukkipati, “Variational methods for conditional multimodal deep learning,” in International Joint Conference on Neural Networks, 2017, pp. 308–315.
+
 [40] M. R. Amer, B. Siddiquie, S. Khan, and A. Divakaran, “Multimodal fusion using dynamic hybrid models,” in Applications of Computer Vision, 2014, pp. 556–563.
+
 [41] Y. Liu, X. Feng, and Z. Zhou, “Multimodal video classification with stacked contractive autoencoders,” Signal Processing, vol. 120, no. 4, pp. 761–766, 2015.
+
 [42] M. R. Amer, T. Shields, B. Siddiquie, A. Tamrakar, A. Divakaran, and S. Chai, “Deep multimodal fusion: A hybrid approach,” International Journal of Computer Vision, vol. 126, no. 2-4, pp. 440–456, 2018.
 
 &emsp;&emsp;有关多模式深度学习的调查论文[“Deep multimodal learning: A survey on recent advances and trends,” IEEE Signal Processing Magazine, vol. 34, no. 6, pp. 96–108, 2017]()。与调查论文不同，在这项工作中，我们重点关注与多媒体相关的领域中的多模式场景，包括但不限于基于深度神经网络的架构。
 
-&emsp;&emsp;接下来，我们讨论两个利用领域适应的思想来桥接不同模式的深层表示的著作[44] [45]，这在所引用的调查论文中并未涉及。
+&emsp;&emsp;接下来，我们讨论两个利用领域适应的思想来桥接不同模式的深层表示的著作[“Learning transferable features with deep adaptation networks,” pp. 97–105, 2015]()、[Deep transfer learning with joint adaptation networks]()，这在所引用的调查论文中并未涉及。
 &emsp;&emsp;我们从经典著作[“How transferable are features in deep neural networks?” in International Conference on Neural Information Processing Systems, 2014, pp. 3320–3328]()开始。
 
 &emsp;&emsp;**在深度神经网络中的可传递性。**
@@ -95,7 +129,10 @@ DAN的目标则由两个部分组成：
 
 &emsp;&emsp;除了领域自适应以外，还有一些旨在通过深度神经网络进行特征学习的工作，例如Liu等人的最新工作[49]。
 
-### C. 多模态迁移学习
+### C. 多模态转移学习
+
+&emsp;&emsp;转移学习旨在增强模型将学习到的知识（从源域）推广并转移到新场景（目标域）的能力，阅读2010年发表的出色调查[“A survey on transfer learning,” IEEE Transactions on knowledge and data engineering, vol. 22, no. 10, pp.1345–1359, 2010]()，了解有关早期模型的详细信息。
+&emsp;&emsp;多模式转移学习特别着重于将知识从一种方式（源）转移到另一种方式（目标）。这种方法使我们能够通过利用原始模式中的现有标记数据来处理新模式中的标记数据。与上述调查文献不同，我们在本节中通过添加包括深度学习方法等在内的最新技术来专注于多媒体中的多模式转移学习。
 
 
 
@@ -106,11 +143,14 @@ DAN的目标则由两个部分组成：
 
 
 
+### D. 多模态哈希
 
 
+---
 
+## 知识导向的多模态分析
 
-
+### A. 知识导向的融合方法
 
 
 
